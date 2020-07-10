@@ -19,10 +19,10 @@ Exercices
 
 ### FizzBuzz
 
-- Rédigez un programme court qui imprime chaque numéro de 1 à 100 sur une nouvelle ligne. 
-- Pour chaque multiple de 3, imprimez "Fizz" au lieu du numéro. 
-- Pour chaque multiple de 5, imprimez "Buzz" au lieu du numéro. 
-- Pour les nombres qui sont des multiples de 3 et de 5, imprimez "FizzBuzz" au lieu du nombre.
+- Rédigez un programme court qui concatène chaque numéro de 1 à 100 à la suite.
+- Pour chaque multiple de 3, concatènez "Fizz" au lieu du numéro.
+- Pour chaque multiple de 5, concatènez "Buzz" au lieu du numéro.
+- Pour les nombres qui sont des multiples de 3 et de 5, concatènez "FizzBuzz" au lieu du nombre.
 
 ### Transformation d'un nombre décimal en nombre romain
 
