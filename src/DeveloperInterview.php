@@ -113,6 +113,8 @@ class DeveloperInterview
     /**
      * Get the factorial of a number
      *
+     * @param int $number
+     *
      * @return int
      */
     public static function factorial(int $number): int
