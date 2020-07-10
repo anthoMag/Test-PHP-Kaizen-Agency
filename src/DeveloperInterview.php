@@ -117,7 +117,7 @@ class DeveloperInterview
      */
     public static function factorial(int $number): int
     {
-        $factorial = null;
+        $factorial = 0;
 
         // Write your code!
 
