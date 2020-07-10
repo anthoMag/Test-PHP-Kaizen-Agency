@@ -39,3 +39,13 @@ Rédigez une fonction ROT13 (ou Rotate By 13 Places). L’idée est de décaler 
 ```php
 toRot13('URYYB JBEYQ'); // HELLO WORLD
 ```
+
+### Expression régulière
+
+Rédigez une fonction qui utilse une expression régulière et qui extrait l'année dans le texte suivant :
+
+> Rapport n°2187 (09/2019) - Achats
+
+```php
+extractYear(); // 2019
+```

@@ -54,4 +54,12 @@ final class DeveloperInterviewTest extends TestCase
             DeveloperInterview::toRot13('KAIZEN DEVELOPMENTS')
         );
     }
+
+    public function testExtractYear(): void
+    {
+        $this->assertEquals(
+            '2019',
+            DeveloperInterview::extractYear()
+        );
+    }
 }

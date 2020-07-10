@@ -6,14 +6,14 @@ final class DeveloperInterview
 {
     /**
      * Write a short program that concats each number from 1 to 100.
-     * 
+     *
      * For each multiple of 3, concat "Fizz" instead of the number.
-     * 
+     *
      * For each multiple of 5, concat "Buzz" instead of the number.
-     * 
+     *
      * For numbers which are multiples of both 3 and 5, concat "FizzBuzz"
      * instead of the number.
-     * 
+     *
      * @return string
      */
     public static function fizzBuzz(): string
@@ -29,7 +29,7 @@ final class DeveloperInterview
      * For a given number, will return its value in Roman numerals.
      *
      * Roman Numerals Chart
-     * 
+     *
      * Roman Numeral | Number Value | Use As Inputs
      * --------------|--------------|---------------
      * I             | 1            | I
@@ -39,9 +39,9 @@ final class DeveloperInterview
      * C             | 100          | C
      * D             | 500          | D
      * M             | 1,000        | M
-     * 
+     *
      * @param int $value An integer between 0 and 3999
-     * 
+     *
      * @return string The roman number equivalent
      */
     public static function parseToRoman(int $value): string
@@ -62,9 +62,9 @@ final class DeveloperInterview
      * forth. Numbers, spaces and punctuation are not changed.
      *
      * Using the native `str_rot13` is forbiden, make your own implementation!
-     * 
+     *
      * @param string $value The string to decode
-     * 
+     *
      * @return string The decoded string
      */
     public static function toRot13(string $value): string
@@ -74,5 +74,21 @@ final class DeveloperInterview
         // Write your code!
 
         return $rot13;
+    }
+
+    /**
+     * Write a regular expression that extracts the year from the $text
+     * variable
+     *
+     * @return string the year
+     */
+    public static function extractYear(): string
+    {
+        $text = 'Rapport n°2187 (09/2019) - Achats';
+        $year = '';
+
+        // Write your code!
+
+        return $year;
     }
 }
