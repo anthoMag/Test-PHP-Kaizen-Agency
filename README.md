@@ -32,7 +32,7 @@ Rédigez une fonction appelé `parseToRoman` qui, pour un nombre donné, va reto
 parseToRoman(1234); // === 'MCCXXXIV'
 ```
 
-### Algorithme de décriptage de ROT13
+### Algorithme de (dé)chiffrement ROT13
 
 Rédigez une fonction ROT13 (ou Rotate By 13 Places). L’idée est de décaler chacune des lettres de l’alphabet de 13 places. Autrement dit, le H devient le U, le E devient le R, etc. Interdit d'utiliser la fonction native `str_rot13` ;)
 
