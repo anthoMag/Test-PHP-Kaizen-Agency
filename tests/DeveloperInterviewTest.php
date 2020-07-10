@@ -87,4 +87,12 @@ final class DeveloperInterviewTest extends TestCase
 
         $mock->simplifyMe('', 1);
     }
+
+    public function testFactorial(): void
+    {
+        $this->assertEquals(
+            120,
+            DeveloperInterview::factorial(5)
+        );
+    }
 }

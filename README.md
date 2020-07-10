@@ -26,7 +26,7 @@ Exercices
 
 ### Transformation d'un nombre décimal en nombre romain
 
-Rédigez une fonction appelé `parseToRoman` qui, pour un nombre donné, va retourner sa valeur en chiffres romains.
+Rédigez une fonction appelé `parseToRoman` qui, pour un nombre donné, va retourner sa valeur en chiffres romains (<3999).
 
 ```php
 parseToRoman(1234); // === 'MCCXXXIV'
@@ -53,3 +53,12 @@ extractYear(); // 2019
 ### Optimisation
 
 Analysez la fonction `simplifyMe` et modifiez là pour l'améliorer.
+
+
+### Fonction Factorielle
+
+Écrire une fonction qui retourne la factorielle d'un nombre :
+
+```php
+factorial(5); // 120
+```

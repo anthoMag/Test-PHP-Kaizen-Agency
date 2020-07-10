@@ -109,4 +109,18 @@ class DeveloperInterview
             $this->doSomething();
         }
     }
+
+    /**
+     * Get the factorial of a number
+     *
+     * @return int
+     */
+    public static function factorial(int $number): int
+    {
+        $factorial = null;
+
+        // Write your code!
+
+        return $factorial;
+    }
 }
