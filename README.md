@@ -7,6 +7,13 @@ Installation
 composer install --dev
 ```
 
+Si vous n'avez pas de token Github pour composer (actif par défaut), vous pouvez désactiver son usage avec la commande suivante (puis relancer le `composer install --dev`)
+
+
+```sh
+composer config --global --unset github-oauth.github.com
+```
+
 Écrivez vos fonctions dans `src/DeveloperInterview.php`, puis lancez les tests:
 
 
@@ -61,4 +68,13 @@ Analysez la fonction `simplifyMe` et modifiez là pour l'améliorer.
 
 ```php
 factorial(5); // 120
+```
+### Fonction de calcul de l'angle d'une pendule
+
+Écrire une fonction qui retourne l'angle formé par les aiguilles d'une pendule (entre la petite et la grande aiguille).
+
+Le premier argument est le chiffre des heures (petite aiguille), le second le chiffre des minutes (grande aiguille)
+
+```php
+clockAngle(3, 30); // 75
 ```

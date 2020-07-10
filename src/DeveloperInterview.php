@@ -125,4 +125,21 @@ class DeveloperInterview
 
         return $factorial;
     }
+
+    /**
+     * Get the angle formed by the hours and the minutes hands
+     *
+     * @param int $hours
+     * @param int $minutes
+     *
+     * @return int
+     */
+    public static function clockAngle(int $hours, int $minutes): int
+    {
+        $angle = 0;
+
+        // Write your code!
+
+        return $angle;
+    }
 }

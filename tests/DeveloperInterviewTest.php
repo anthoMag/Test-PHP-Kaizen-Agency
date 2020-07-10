@@ -95,4 +95,22 @@ final class DeveloperInterviewTest extends TestCase
             DeveloperInterview::factorial(5)
         );
     }
+
+    public function testClockAngle(): void
+    {
+        $this->assertEquals(
+            190,
+            DeveloperInterview::clockAngle(1, 40)
+        );
+
+        $this->assertEquals(
+            75,
+            DeveloperInterview::clockAngle(3, 30)
+        );
+
+        $this->assertEquals(
+            313,
+            DeveloperInterview::clockAngle(0, 57)
+        );
+    }
 }
