@@ -62,4 +62,29 @@ final class DeveloperInterviewTest extends TestCase
             DeveloperInterview::extractYear()
         );
     }
+
+    public function testSimplifyMe(): void
+    {
+        // Test 1
+        $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
+            ->setMethods(['doSomething'])
+            ->getMock();
+
+        $mock
+            ->expects($this->once())
+            ->method('doSomething');
+
+        $mock->simplifyMe('doSomethingShouldBeCalled', 1);
+
+        // Test 2
+        $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
+            ->setMethods(['doSomething'])
+            ->getMock();
+
+        $mock
+            ->expects($this->never())
+            ->method('doSomething');
+
+        $mock->simplifyMe('', 1);
+    }
 }

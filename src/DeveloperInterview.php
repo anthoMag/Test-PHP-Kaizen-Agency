@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-final class DeveloperInterview
+class DeveloperInterview
 {
     /**
      * Write a short program that concats each number from 1 to 100.
@@ -92,17 +92,21 @@ final class DeveloperInterview
         return $year;
     }
 
+    public function doSomething(): string
+    {
+    }
+
     /**
      * Ouch, this code is ugly. Can you improve it?
      *
-     * @return void
+     * @return boolean
      */
-    public static function simplifyMe(): void
+    public function simplifyMe($report, $rc)
     {
-        if (report === '' && rc === 1) {
+        if ($report === '' && $rc === 1) {
             // pass
         } else {
-            self::fizzBuzz();
+            $this->doSomething();
         }
     }
 }
