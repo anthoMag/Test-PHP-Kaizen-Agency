@@ -91,4 +91,18 @@ final class DeveloperInterview
 
         return $year;
     }
+
+    /**
+     * Ouch, this code is ugly. Can you improve it?
+     *
+     * @return void
+     */
+    public static function simplifyMe(): void
+    {
+        if (report === '' && rc === 1) {
+            // pass
+        } else {
+            self::fizzBuzz();
+        }
+    }
 }

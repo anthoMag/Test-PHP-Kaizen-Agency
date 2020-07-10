@@ -49,3 +49,7 @@ Rédigez une fonction qui utilse une expression régulière et qui extrait l'ann
 ```php
 extractYear(); // 2019
 ```
+
+### Optimisation
+
+Analysez la fonction `simplifyMe` et modifiez là pour l'améliorer.
