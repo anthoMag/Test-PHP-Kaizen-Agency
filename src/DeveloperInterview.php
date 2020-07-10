@@ -92,7 +92,7 @@ class DeveloperInterview
         return $year;
     }
 
-    public function doSomething(): string
+    public function doSomething()
     {
     }
 
