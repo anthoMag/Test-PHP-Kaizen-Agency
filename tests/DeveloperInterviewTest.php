@@ -82,10 +82,32 @@ final class DeveloperInterviewTest extends TestCase
             ->getMock();
 
         $mock
+            ->expects($this->once())
+            ->method('doSomething');
+
+        $mock->simplifyMe('doSomethingShouldBeCalled', 2);
+
+        // Test 3
+        $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
+            ->setMethods(['doSomething'])
+            ->getMock();
+
+        $mock
             ->expects($this->never())
             ->method('doSomething');
 
         $mock->simplifyMe('', 1);
+
+        // Test 4
+        $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
+            ->setMethods(['doSomething'])
+            ->getMock();
+
+        $mock
+            ->expects($this->once())
+            ->method('doSomething');
+
+        $mock->simplifyMe('', 2);
     }
 
     public function testFactorial(): void
