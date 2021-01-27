@@ -3,6 +3,11 @@
 Installation
 ---
 
+Pré-requis
+
+- PHP
+- Composer (https://getcomposer.org/)
+
 ```sh
 composer install --dev
 ```
@@ -59,16 +64,16 @@ extractYear(); // 2019
 
 ### Optimisation
 
-Analysez la fonction `simplifyMe` et modifiez là pour l'améliorer.
-
+Analysez la fonction `simplifyMe` et modifiez là pour l'améliorer (indice : chercher à inverser la condition booléene)
 
 ### Fonction Factorielle
 
-Écrire une fonction qui retourne la factorielle d'un nombre :
+Écrire une fonction qui retourne la factorielle d'un nombre (indice : la méthode récursive est à priviligier)
 
 ```php
 factorial(5); // 120
 ```
+
 ### Fonction de calcul de l'angle d'une pendule
 
 Écrire une fonction qui retourne l'angle formé par les aiguilles d'une pendule (entre la petite et la grande aiguille).
