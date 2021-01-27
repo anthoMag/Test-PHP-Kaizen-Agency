@@ -2,8 +2,8 @@
 
 2 parties :
 
-- Test algorithmique
-- Test applicatif
+- [Test algorithmique](#test-algorithmique)
+- [Test applicatif](#test-applicatif)
 
 Test algorithmique
 --
