@@ -10,7 +10,7 @@ Test algorithmique
 
 ### Pré-requis
 
-- PHP
+- PHP 7.3
 - Composer (https://getcomposer.org/)
 
 ### Installation
