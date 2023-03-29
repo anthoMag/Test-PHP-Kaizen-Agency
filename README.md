@@ -10,7 +10,7 @@ Test algorithmique
 
 ### Pré-requis
 
-- PHP >=7.3
+- PHP >=8.2
 - Composer (https://getcomposer.org/)
 
 ### Installation
@@ -92,13 +92,13 @@ clockAngle(3, 30); // 75
 Test applicatif
 ---
 
-L'objectif est de créer une page web avec un formulaire qui demandera combien de maisons vertes et combien de maisons bleues l'utilisateur veut dessiner.  Une fois le formulaire soumis, la page générera X numéros de maisons vertes et Y numéros de maisons bleues sous le formulaire. Les différents choix pour ce test sont entièrement libres, libre à vous d'utiliser un framework ou de tout faire à la main. 
+L'objectif est de créer une page web avec un formulaire qui demandera combien de maisons vertes et combien de maisons bleues l'utilisateur veut dessiner.  Une fois le formulaire soumis, la page générera X numéros de maisons vertes et Y numéros de maisons bleues sous le formulaire. Les différents choix pour ce test sont entièrement libres, libre à vous d'utiliser un framework ou de tout faire à la main.
 
 ### PHP
 
 - Créer un fichier `index.php` qui sera accessible via un domaine local.
 - Créer une classe `MyHouse` qui a 2 propriétés (`color`, `size`) et une méthode `generate` qui générera le code html pour dessiner les deux types de maisons et prendra en compte les propriétés de taille et de couleur.
-- Créez deux classes (`MyHouse1`, `MyHouse2`), qui hériteront de toutes les propriétés de `MyHouse` et surchargeront les propriétés de couleur et de taille avec leurs propres paramètres. 
+- Créez deux classes (`MyHouse1`, `MyHouse2`), qui hériteront de toutes les propriétés de `MyHouse` et surchargeront les propriétés de couleur et de taille avec leurs propres paramètres.
 
 ### Formulaire
 
@@ -108,7 +108,7 @@ L'objectif est de créer une page web avec un formulaire qui demandera combien d
 
 ### CSS
 
-- Joignez un fichier css qui vous aidera à styliser les maisons (de simples maisons carrées suffisent, vous pouvez peut-être faire mieux), le formulaire et les boutons. 
+- Joignez un fichier css qui vous aidera à styliser les maisons (de simples maisons carrées suffisent, vous pouvez peut-être faire mieux), le formulaire et les boutons.
 - Au hover, rendez les maisons transparentes.
 
 ### Javascript

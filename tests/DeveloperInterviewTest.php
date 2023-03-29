@@ -67,7 +67,7 @@ final class DeveloperInterviewTest extends TestCase
     {
         // Test 1
         $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
-            ->setMethods(['doSomething'])
+            ->onlyMethods(['doSomething'])
             ->getMock();
 
         $mock
@@ -78,7 +78,7 @@ final class DeveloperInterviewTest extends TestCase
 
         // Test 2
         $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
-            ->setMethods(['doSomething'])
+            ->onlyMethods(['doSomething'])
             ->getMock();
 
         $mock
@@ -89,7 +89,7 @@ final class DeveloperInterviewTest extends TestCase
 
         // Test 3
         $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
-            ->setMethods(['doSomething'])
+            ->onlyMethods(['doSomething'])
             ->getMock();
 
         $mock
@@ -100,7 +100,7 @@ final class DeveloperInterviewTest extends TestCase
 
         // Test 4
         $mock = $this->getMockBuilder(DeveloperInterview::CLASS)
-            ->setMethods(['doSomething'])
+            ->onlyMethods(['doSomething'])
             ->getMock();
 
         $mock
