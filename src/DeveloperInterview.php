@@ -20,8 +20,16 @@ class DeveloperInterview
     {
         $fizzBuzz = '';
 
-        // Write your code!
-
+        for ($i = 1; $i <= 100; $i++) {
+            
+            $fizzBuzz .= match(true) {
+                (($i % 3 == 0) && ($i % 5 == 0)) => "FizzBuzz",
+                ($i % 3 == 0) => "Fizz",
+                ($i % 5 == 0) => "Buzz",
+                default => $i
+            };
+        }
+            
         return $fizzBuzz;
     }
 
@@ -48,7 +56,37 @@ class DeveloperInterview
     {
         $roman = '';
 
-        // Write your code!
+        $letters = [
+            'M' => 1000,
+            'CM' => 900,
+            'D' => 500,
+            'CD' => 400,
+            'C' => 100,
+            'XC' => 90,
+            'L' => 50,
+            'XL' => 40,
+            'X' => 10,
+            'IX' => 9,
+            'V' => 5,
+            'IV' => 4,
+            'I' => 1,
+        ];
+
+        foreach ($letters as $letter => $multiple) {
+            $numberOfMultiple = (int)($value / $multiple);
+
+            if ($numberOfMultiple === 0) {
+                continue;
+            }
+
+            $roman .= str_repeat($letter, $numberOfMultiple);
+
+            $value %= $multiple;
+
+            if ($value === 0) {
+                break;
+            }
+        }
 
         return $roman;
     }
@@ -71,7 +109,24 @@ class DeveloperInterview
     {
         $rot13 = '';
 
-        // Write your code!
+        $letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        $firstPart = array_slice($letters, 0, count($letters) / 2);
+        $lastPart = array_slice($letters, count($letters) / 2);
+
+        $mapping = [];
+
+        foreach ($firstPart as $key => $letter) {
+            $mapping[$letter] = $lastPart[$key];
+            $mapping[$lastPart[$key]] = $letter;
+
+            $mapping[strtolower($letter)] = strtolower($lastPart[$key]);
+            $mapping[strtolower($lastPart[$key])] = strtolower($letter);
+        }
+
+        foreach (str_split($value) as $letter) {
+            $rot13 .= $mapping[$letter] ?? $letter;
+        }
 
         return $rot13;
     }
@@ -87,7 +142,9 @@ class DeveloperInterview
         $text = 'Rapport n°2187 (09/2019) - Achats';
         $year = '';
 
-        // Write your code!
+        $regex = '/\/(\d{4})\)/';
+        preg_match($regex, $text, $output);
+        $year = $output[1];
 
         return $year;
     }
@@ -104,10 +161,10 @@ class DeveloperInterview
     public function simplifyMe($report, $rc)
     {
         if ($report === '' && $rc === 1) {
-            // pass
-        } else {
-            $this->doSomething();
+            return;
         }
+
+        $this->doSomething();
     }
 
     /**
@@ -119,9 +176,11 @@ class DeveloperInterview
      */
     public static function factorial(int $number): int
     {
-        $factorial = 0;
+        $factorial = 1;
 
-        // Write your code!
+        for ($i=2; $i <= $number; $i++) { 
+            $factorial = $factorial * $i;
+        }        
 
         return $factorial;
     }
@@ -138,8 +197,13 @@ class DeveloperInterview
     {
         $angle = 0;
 
-        // Write your code!
+        $hoursInMinutes = $hours * 60 + $minutes;
 
-        return $angle;
+        $hoursNeedle = $hoursInMinutes * 360 / 720;
+        $minutesNeedle = $minutes * 360 / 60;
+
+        $angle = $minutesNeedle - $hoursNeedle;        
+
+        return (int)$angle;
     }
 }
